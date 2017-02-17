@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  Plist文件相关
+//
+//  Created by Zhuge_Magic on 2017/2/17.
+//  Copyright © 2017年 Magic. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#if DEBUG
+#define ZGLog(...) NSLog(@"%s/Line:%d>%@",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define ZGLog(...)
+
+#endif
+
+#endif /* PrefixHeader_pch */
